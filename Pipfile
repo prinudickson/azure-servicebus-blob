@@ -7,6 +7,8 @@ name = "pypi"
 azure-servicebus = "*"
 azure-storage-blob = "*"
 python-dotenv = "*"
+icecream = "*"
+requests = "*"
 
 [dev-packages]
 

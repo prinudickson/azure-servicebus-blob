@@ -19,7 +19,7 @@ async def send_single_message(sender):
 
 async def send_a_list_of_messages(sender):
     # Create a list of messages and send it to the queue
-    messages = [ServiceBusMessage("Message in list") for _ in range(5)]
+    messages = [ServiceBusMessage("Message in list WHTEEEEE") for _ in range(5)]
     await sender.send_messages(messages)
     print("Sent a list of 5 messages")
 
@@ -30,7 +30,7 @@ async def send_batch_message(sender):
         for _ in range(10):
             try:
                 # Add a message to the batch
-                batch_message.add_message(ServiceBusMessage("Message inside a ServiceBusMessageBatch"))
+                batch_message.add_message(ServiceBusMessage("Prinu!!!!"))
             except ValueError:
                 # ServiceBusMessageBatch object reaches max_size.
                 # New ServiceBusMessageBatch object can be created here to send more data.
